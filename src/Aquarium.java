@@ -7,19 +7,8 @@ public class Aquarium {
 
     List<Fish> fishList = new ArrayList<>();
 
-    public void addFish(String name, int weight, String color, String stripeColor) {
-        Fish clownFish = new ClownFish(name, weight, color, stripeColor);
-        fishList.add(clownFish);
-    }
-
-    public void addFish(String name, int weight, String color, boolean shortTermMemoryLoss) {
-        Fish tang = new Tang(name, weight, color, shortTermMemoryLoss);
-        fishList.add(tang);
-    }
-
-    public void addFish(String name, int weight, String color) {
-        Fish kong = new Kong(name, weight, color);
-        fishList.add(kong);
+    public void addFish(Fish fish) {
+        fishList.add(fish);
     }
 
     public void feed(){

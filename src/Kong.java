@@ -4,6 +4,6 @@ public class Kong extends Fish{
         super(name, weight, color);
     }
     public void feed(){
-        this.weight =this.weight + 2;
+        weight += 2;
     }
 }
